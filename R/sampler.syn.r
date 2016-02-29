@@ -232,7 +232,7 @@ remove.lindep.syn <- function(x, y, eps=0.00001, maxcor=0.99999,
 }
 
 # make list of collinear variables
-find.collinear <- function(x, threshold=0.99999, ...) {
+find.collinear <- function(x, threshold=1, ...) {
   nvar      <- ncol(x)
   x         <- data.matrix(x)
   varnames  <- dimnames(x)[[2]]
